@@ -30,8 +30,8 @@ export class AppComponent {
     });
 
     this.userForm=formBuilder.group({
-      truee:new FormControl(),
-      falsee:new FormControl(),
+      T:new FormControl(),
+      F:new FormControl(),
       phoneNumber:new FormControl(),
       emailAddress:new FormControl(),
       firstName:new FormControl(),
