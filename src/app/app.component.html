@@ -1,0 +1,98 @@
+<router-outlet></router-outlet>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<div class="container">
+<div class="ui input">
+  <label for="">Enter FirstName: </label>
+  <input type="text" placeholder="First Name">
+  
+</div>
+
+<br>
+<br>
+
+<div class="ui input">
+  <label for="">Enter LastName: </label>
+  <input type="text" placeholder="Last Name">
+</div>
+
+<br>
+<br>
+
+<div class="ui input">
+  <label for="">Enter your email: </label>
+  <input type="text" placeholder="Email">
+</div>
+
+<br>
+<br>
+
+<div class="ui input">
+  <label for="">Enter Phone no: </label>
+  <input type="text" placeholder="Phone no">
+</div>
+
+<br>
+<br>
+
+<div class="select">
+  <select name="" id="" placeholder="select country">
+    <option value="" *ngFor="let item of data">
+      {{item.name}}
+    </option>
+  </select>
+  
+  
+  <select name="" id="" placeholder="">
+    <option value="">Frontend Developer</option>
+    <option value="">Backend Developer</option>
+    <option value="">Designer</option>
+    <option value="">Devops Engineer</option>
+  </select>
+</div>
+
+<br>
+<br>
+
+
+<div class="ui form">
+  <div class="grouped fields">
+    <div class="field">
+      <div class="ui radio checkbox" >
+        <input type="radio" name="name" checked="checked" class="true">
+        <label>True</label>
+      </div>
+    </div>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="name">
+        <label>False</label>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+
+
+
+
+<br>
+<br>
+
+<button (click)="showToast('Success')" class="submit">submit</button>
+
+</div>
+<!-- <button (click)="goTopage('Header')"> success page</button> -->
+  <!-- <sui-select placeholder="Choose">
+      <sui-select-option value="Option 1">Frontend Developer</sui-select-option>
+      <sui-select-option value="Option 2"> Backend Developer</sui-select-option>
+      <sui-select-option value="Option 3">Designer</sui-select-option>
+      <sui-select-option value="Option 4">Devops Engineer</sui-select-option>
+  </sui-select></div> -->
+
+
+
